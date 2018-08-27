@@ -29,3 +29,5 @@ p.Start("Your message")
 ```
 
 When your command finishes just call `p.Stop()` or `p.Stopln()`
+
+Demo code is available [here](./demo/spinner.go).
