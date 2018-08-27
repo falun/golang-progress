@@ -1,11 +1,11 @@
 package progress
 
-// Generated with:
+// Generated with the following javascript:
 // const convert = input => Object.keys(input).forEach(k => {
-//  const def = input[k]
-// 	const filteredFrames = def.frames.map(f => f.replace(/\\/g, '\\\\'))
-//  const frames = filteredFrames.map(f => `"${f}"`)
-// 	console.log(`add("${k}", []string{${frames.join(', ')}}, ${def.interval})`)
+//   const def = input[k]
+//   const filteredFrames = def.frames.map(f => f.replace(/\\/g, '\\\\'))
+//   const frames = filteredFrames.map(f => `"${f}"`)
+//   console.log(`add("${k}", []string{${frames.join(', ')}}, ${def.interval})`)
 // })
 // applied to https://github.com/sindresorhus/cli-spinners/blob/master/spinners.json
 
