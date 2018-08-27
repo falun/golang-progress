@@ -1,4 +1,4 @@
-package spinner
+package progress
 
 // Generated with:
 // const convert = input => Object.keys(input).forEach(k => {

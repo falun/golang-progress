@@ -46,17 +46,8 @@ func (p *spinner) ChangeFrames(fs Frameset) {
 }
 
 func (p *spinner) draw() {
-	if p.lastText != p.currentText {
-		spaces := ""
-		for i := 0; i < len(p.lastText)+len(p.frames[0]); i++ {
-			spaces += " "
-		}
-		fmt.Printf("%s\r", spaces)
-
-		p.lastText = p.currentText
-	}
-
-	fmt.Printf("%s %s\r", p.frames[p.frame], p.currentText)
+	reset := "\033[2K\r"
+	fmt.Printf(reset + "%s %s", p.frames[p.frame], p.currentText)
 	p.frame = (p.frame + 1) % len(p.frames)
 }
 
