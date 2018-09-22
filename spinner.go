@@ -23,10 +23,12 @@ type spinner struct {
 	timer       *time.Timer
 }
 
-var defaultFrameset = Animations["line"]
+var defaultFrameset = "line"
 
 func NewSpinner() Spinner {
-	return NewSpinnerWithFrames(defaultFrameset)
+	return NewSpinnerWithFrames(
+		Animations[defaultFrameset],
+	)
 }
 
 func NewSpinnerWithFrames(frameset Frameset) Spinner {
